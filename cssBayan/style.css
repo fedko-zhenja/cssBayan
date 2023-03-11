@@ -25,7 +25,7 @@ body {
 
 .accordion-img {
     width: 0%;
-    height: 50%;
+    height: 0%;
     padding-left: 25%;
     padding-right: 25%;
     transition: 0.5s;
@@ -42,25 +42,27 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    /* column-gap: 60%; */
 }
 
-.accordion-input:hover ~ .accordion-img {
-    width: 50%;
-}
 
 .accordion-input:hover ~ .accordion-title .accordion-icon-delete{
     width: 1%;
     color: black;
 }
 
-.accordion-input:hover ~ .accordion-title .accordion-icon-add{
-    width: 0;
-    color: white;
+
+
+.accordion-input:checked ~ .accordion-title .accordion-img{
+    width: 50%;
+    height: 100%;
 }
 
-.accordion-input:checked ~ .accordion-img{
+.accordion-input:hover ~ .accordion-title .accordion-img {
     width: 50%;
+    height: 100%;
 }
 
 .accordion-input:checked ~ .accordion-title{
@@ -68,36 +70,50 @@ body {
     /* background-color: gray; */
 }
 
-.accordion-icon-delete {
+.accordion:hover .accordion-icon-add{
+    width: 30px;
+    height: 30px;
+    background-image: url(./img/icon-add.png);
+    background-size: 30px 30px;
+    transition: 0.2s;
+}
+
+.accordion-input:hover ~ .accordion-title .accordion-icon-add{
+    transform: rotate(45deg);
+}
+
+.accordion-input:checked ~ .accordion-title .accordion-icon-add{
+    transform: rotate(45deg);
+}
+
+/* .accordion-icon-delete {
     width: 0;
     height: 0;
     color: white;
     display: inline-flex;
-}
+} */
 
-.accordion-icon-add {
-    /* width: 0; */
-    /* height: 0; */
+/* .accordion-icon-add {
     color: black;
     display: inline-flex;
-}
+} */
 
-.accordion-input:checked ~ .accordion-title .accordion-icon-delete{
+/* .accordion-input:checked ~ .accordion-title .accordion-icon-delete{
     width: 1%;
     color: black;
 }
 .accordion-input:checked ~ .accordion-title .accordion-icon-add{
     width: 0;
     color: white;
-}
+} */
 
 /* .accordion-input:checked ~ .accordion-title .accordion-icon-add{
     width: 0;
     color: white;
 } */
-.accordion-img:hover {
+/* .accordion-img:hover {
     width: 50%;
-}
+} */
 
 /* .accordion-img:hover ~ .accordion-title .accordion-icon-delete{
     width: 1%;
