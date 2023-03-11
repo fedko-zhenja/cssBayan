@@ -107,8 +107,6 @@ width: 100%;
     .accordion-input:checked ~ .accordion-title .accordion-img{
         width: 70%;
         height: 100%;
-        transform: rotate(360deg);
-    
     }
     
     .accordion-input:hover ~ .accordion-title .accordion-img {
@@ -134,9 +132,7 @@ width: 100%;
 
     .accordion-input:checked ~ .accordion-title .accordion-img{
         width: 90%;
-        height: 100%;
-        transform: rotate(360deg);
-    
+        height: 100%;    
     }
     
     .accordion-input:hover ~ .accordion-title .accordion-img {
