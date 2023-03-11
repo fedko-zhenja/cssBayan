@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+}
+
+.page-container {
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.accordion {
+    color: blue;
+}
+
+.accordion:hover {
+    color: black;
+}
+
+.accordion-item {
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1%;
+}
+
+.accordion-img {
+    width: 0%;
+    height: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    transition: 0.5s;
+}
+
+.accordion-input {
+    width: 0;
+    height: 0;
+    appearance: none; 
+}
+
+.accordion-title {
+    line-height: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-input:hover ~ .accordion-img {
+    width: 50%;
+}
+
+.accordion-input:hover ~ .accordion-title .accordion-icon-delete{
+    width: 1%;
+    color: black;
+}
+
+.accordion-input:hover ~ .accordion-title .accordion-icon-add{
+    width: 0;
+    color: white;
+}
+
+.accordion-input:checked ~ .accordion-img{
+    width: 50%;
+}
+
+.accordion-input:checked ~ .accordion-title{
+    color: black;
+    /* background-color: gray; */
+}
+
+.accordion-icon-delete {
+    width: 0;
+    height: 0;
+    color: white;
+    display: inline-flex;
+}
+
+.accordion-icon-add {
+    /* width: 0; */
+    /* height: 0; */
+    color: black;
+    display: inline-flex;
+}
+
+.accordion-input:checked ~ .accordion-title .accordion-icon-delete{
+    width: 1%;
+    color: black;
+}
+.accordion-input:checked ~ .accordion-title .accordion-icon-add{
+    width: 0;
+    color: white;
+}
+
+/* .accordion-input:checked ~ .accordion-title .accordion-icon-add{
+    width: 0;
+    color: white;
+} */
+.accordion-img:hover {
+    width: 50%;
+}
+
+/* .accordion-img:hover ~ .accordion-title .accordion-icon-delete{
+    width: 1%;
+    color: black;
+} */
+
