@@ -18,7 +18,7 @@ body {
 }
 
 .accordion-item {
-    border-top: 1px solid black;
+    border-top: 0.1rem solid black;
     display: flex;
     flex-direction: column;
     padding-bottom: 1%;
@@ -74,10 +74,10 @@ width: 100%;
 }
 
 .accordion:hover .accordion-icon-add{
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
     background-image: url(./img/icon-add.png);
-    background-size: 30px 30px;
+    background-size: 2rem 2rem;
     transition: 0.2s;
 }
 
