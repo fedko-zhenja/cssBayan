@@ -13,10 +13,6 @@ body {
     color: blue;
 }
 
-.accordion:hover {
-    color: black;
-}
-
 .accordion-item {
     border-top: 0.1rem solid black;
     display: flex;
@@ -48,12 +44,7 @@ body {
 }
 
 .img-container {
-width: 100%;
-}
-
-.accordion-input:hover ~ .accordion-title {
-    color: green;
-    background-color: darkseagreen;
+    width: 100%;
 }
 
 .accordion-input:checked ~ .accordion-title .accordion-img{
@@ -63,26 +54,9 @@ width: 100%;
 
 }
 
-.accordion-input:hover ~ .accordion-title .accordion-img {
-    width: 50%;
-    height: 100%;
-}
-
 .accordion-input:checked ~ .accordion-title{
     color: black;
     background-color: lightgray;
-}
-
-.accordion:hover .accordion-icon-add{
-    width: 2rem;
-    height: 2rem;
-    background-image: url(./img/icon-add.png);
-    background-size: 2rem 2rem;
-    transition: 0.2s;
-}
-
-.accordion-input:hover ~ .accordion-title .accordion-icon-add{
-    transform: rotate(45deg);
 }
 
 .accordion-input:checked ~ .accordion-title .accordion-icon-add{
@@ -138,5 +112,33 @@ width: 100%;
     .accordion-input:hover ~ .accordion-title .accordion-img {
         width: 90%;
         height: 100%;
+    }
+}
+
+@media (hover: hover) {
+    .accordion:hover {
+        color: black;
+    }
+
+    .accordion-input:hover ~ .accordion-title {
+        color: green;
+        background-color: darkseagreen;
+    }
+
+    .accordion-input:hover ~ .accordion-title .accordion-img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .accordion:hover .accordion-icon-add{
+        width: 2rem;
+        height: 2rem;
+        background-image: url(./img/icon-add.png);
+        background-size: 2rem 2rem;
+        transition: 0.2s;
+    }
+
+    .accordion-input:hover ~ .accordion-title .accordion-icon-add{
+        transform: rotate(45deg);
     }
 }
